@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "removeComments": true,
+    "target": "es6",
+    "sourceMap": true,
+    "outDir": "build",
+    "allowJs": true
+  },
+  "exclude": [
+    "node_modules",
+    "build"
+  ]
+}

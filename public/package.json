@@ -1,0 +1,18 @@
+{
+  "name": "circle-rally-party-nwjs-build-pipeline",
+  "version": "1.0.0",
+  "description": "NW.js build using nw-build for Circle Rally Party",
+  "main": "index.html",
+  "single-instance": true,
+  "dom_storage_quota": 50,
+  "window": {
+    "title": "App",
+    "icon": "./assets/icon.png",
+    "toolbar": false,
+    "min_width": 1440,
+    "min_height": 900,
+    "position": "center"
+  },
+  "chromium-args": "--allow-file-access-from-files --in-process-gpu --disable-direct-composition --disable-dev-tools",
+  "author": "Yvo Geldhof"
+}
