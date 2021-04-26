@@ -2,18 +2,9 @@
   "defaultSeverity": "error",
   "jsRules": {},
   "rules": {
-    "array-type": [
-      true,
-      "array"
-    ],
-    "quotemark": [
-      true,
-      "single"
-    ],
-    "semicolon": [
-      true,
-      "always"
-    ]
+    "array-type": [true, "array"],
+    "quotemark": [true, "single"],
+    "semicolon": [true, "always"]
   },
   "rulesDirectory": []
 }

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon.png" />
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+  </head>
+  <body>
+    <div id="game-container"></div>
+
+    <script type="text/javascript">
+      if (typeof nw != "undefined") {
+        const nwWindow = nw.Window.get();
+        const greenworks = null;
+
+        nwWindow.on("loaded", () => {
+          const game = document.createElement("script");
+
+          game.type = "text/javascript";
+          game.src = "./game.js";
+
+          document.body.appendChild(game);
+        });
+      }
+    </script>
+  </body>
+</html>

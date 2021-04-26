@@ -1,0 +1,39 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Game</title>
+    <link rel="icon" type="image/png" href="./assets/images/icon.png" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./assets/css/style.css"
+    /></head
+  >npm
+  <body>
+    <div id="game-container"></div>
+
+    <script type="text/javascript">
+      if (typeof nw != "undefined") {
+        const nwWindow = nw.Window.get();
+        let greenworks = null;
+
+        nwWindow.on("loaded", () => {
+          try {
+            greenworks = require("./lib/gw.js");
+          } catch (err) {
+            console.error("Could not load Greenworks");
+            console.error(err);
+            alert("Could not initialize Greenworks");
+          }
+
+          const game = document.createElement("script");
+
+          game.type = "text/javascript";
+          game.src = "./game.js";
+
+          document.body.appendChild(game);
+        });
+      }
+    </script>
+  </body>
+</html>

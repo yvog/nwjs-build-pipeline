@@ -1,18 +1,19 @@
 {
-  "name": "circle-rally-party-nwjs-build-pipeline",
-  "version": "1.0.0",
-  "description": "NW.js build using nw-build for Circle Rally Party",
+  "name": "game",
+  "version": "1.2.3",
+  "description": "Game description",
   "main": "index.html",
-  "single-instance": true,
-  "dom_storage_quota": 50,
+  "dom_storage_quota": 100,
   "window": {
-    "title": "App",
-    "icon": "./assets/icon.png",
+    "title": "Game",
+    "icon": "icon.png",
     "toolbar": false,
+    "transparent": false,
     "min_width": 1440,
     "min_height": 900,
-    "position": "center"
+    "position": "center",
+    "resizable": false
   },
-  "chromium-args": "--allow-file-access-from-files --in-process-gpu --disable-direct-composition --disable-dev-tools",
+  "chromium-args": "--in-process-gpu --disable-direct-composition --disable-dev-tools --disable-transparency --disable-raf-throttling --allow-file-access-from-files",
   "author": "Yvo Geldhof"
 }
