@@ -5,11 +5,11 @@ This project provides the desktop build configuration as written for my little l
 ### Versions
 
 ```
-webpack				4.x.x
-TypeScript 			3.x.x
-node: 				11.10.1
-nw.js:				0.36.4 (32-bit)
-Steam API:          1.42
+webpack                4.x.x
+TypeScript             3.x.x
+node:                  11.10.1
+nw.js:                 0.36.4 (32-bit)
+Steam API:             1.42
 ```
 
 ### Production build
