@@ -1,4 +1,4 @@
-# NW.js desktop build pipeline for Circle Rally Party using nw-build
+# NW.js desktop build configuration
 
 This project provides the desktop build configuration as written for my little local multiplayer party game: [Circle Rally Party](https://store.steampowered.com/app/992950/Circle_Rally_Party/)
 
